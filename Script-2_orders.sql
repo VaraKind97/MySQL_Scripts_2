@@ -1,5 +1,5 @@
 create table ORDERS (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    id int AUTO_INCREMENT PRIMARY KEY,
     date date not null,
     customer_id int not null,
     product_name varchar(55) not null,
@@ -8,6 +8,7 @@ create table ORDERS (
         ON DELETE RESTRICT
         ON UPDATE CASCADE
 );
+
 
 
 
