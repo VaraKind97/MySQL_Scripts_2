@@ -1,11 +1,7 @@
-create table customers
-(
-    id           int auto_increment
-        primary key,
-    name         varchar(50) not null,
-    surname      varchar(50) not null,
-    age          int         null,
-    phone_number varchar(15) null
-);
+SELECT o.product_name
+FROM ORDERS o
+JOIN CUSTOMERS c ON o.customer_id = c.id
+WHERE LOWER(c.name) = LOWER('alexey');
+
 
 
